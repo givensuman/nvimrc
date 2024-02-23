@@ -19,6 +19,7 @@ return {
 
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.tailwindcss" },
+  { import = "astrocommunity.pack.markdown" },
 
   { import = "astrocommunity.diagnostics.trouble-nvim" },
 }
