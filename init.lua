@@ -81,5 +81,25 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+    vim.api.nvim_create_augroup("neotree", {})
+    vim.api.nvim_create_autocmd("VimEnter", {
+      desc = "Open Neotree automatically",
+      group = "neotree",
+      callback = function()
+        if vim.fn.argc() == 0 and not vim.fn.exists "s:std_in" then
+          vim.cmd "Neotree toggle"
+        end
+      end,
+    })
+    vim.api.nvim_create_autocmd("BufEnter", {
+      desc = "Open Neotree automatically",
+      group = "neotree",
+      callback = function()
+        if vim.fn.argc() == 0 and not vim.fn.exists "s:std_in" then
+          vim.cmd "Neotree toggle"
+        end
+      end,
+    })
+
   end,
 }
