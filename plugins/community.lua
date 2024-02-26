@@ -8,10 +8,19 @@ return {
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   
   { import = "astrocommunity.colorscheme.catppuccin" },
+  -- { import = "astrocommunity.colorscheme.rose-pine" },
+  -- { import = "astrocommunity.colorscheme.github-nvim-theme" },
 
   -- { import = "astrocommunity.editing-support.auto-save-nvim" },
   { import = "astrocommunity.editing-support.neogen" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
+  { import = "astrocommunity.editing-support.cutlass-nvim" },
+  {
+    "gbprod/cutlass.nvim",
+    opts = {
+      cut_key = "x",
+    }
+  },
 
   -- { import = "astrocommunity.scrolling.mini-animate" },
 
