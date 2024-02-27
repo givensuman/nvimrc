@@ -11,6 +11,8 @@ return {
   -- { import = "astrocommunity.colorscheme.rose-pine" },
   -- { import = "astrocommunity.colorscheme.github-nvim-theme" },
 
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
+
   -- { import = "astrocommunity.editing-support.auto-save-nvim" },
   { import = "astrocommunity.editing-support.neogen" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
@@ -21,6 +23,8 @@ return {
       cut_key = "x",
     }
   },
+  { import = "astrocommunity.editing-support.multicursors-nvim" },
+  { import = "astrocommunity.editing-support.todo-comments-nvim" },
 
   -- { import = "astrocommunity.scrolling.mini-animate" },
 
@@ -30,5 +34,5 @@ return {
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.markdown" },
 
-  { import = "astrocommunity.diagnostics.trouble-nvim" },
+  { import = "astrocommunity.project.nvim-spectre" },
 }
