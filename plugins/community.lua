@@ -33,6 +33,7 @@ return {
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.java" },
 
   { import = "astrocommunity.project.nvim-spectre" },
 }
