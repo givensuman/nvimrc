@@ -7,16 +7,19 @@ return {
   -- first key is the mode
   n = {
     -- second key is the lefthand side of the map
+    
+    -- VSCode keybind to open terminal
+    ["<C-`>"] = { ":ToggleTerm direction=horizontal name=🚀<CR>", desc = "Open Terminal" }, 
 
     -- navigate buffer tabs with `H` and `L`
-    -- L = {
-    --   function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
-    --   desc = "Next buffer",
-    -- },
-    -- H = {
-    --   function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
-    --   desc = "Previous buffer",
-    -- },
+    L = {
+      function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
+      desc = "Next buffer",
+    },
+    H = {
+      function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
+      desc = "Previous buffer",
+    },
 
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {

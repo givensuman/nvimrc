@@ -6,10 +6,15 @@ return {
 
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+
+  { import = "astrocommunity.completion.codeium-vim" },
   
   { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.colorscheme.rose-pine" },
   -- { import = "astrocommunity.colorscheme.github-nvim-theme" },
+  -- { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
+  -- { import = "astrocommunity.colorscheme.vscode-nvim" },
+  -- { import = "astrocommunity.colorscheme.dracula-nvim" },
 
   { import = "astrocommunity.diagnostics.trouble-nvim" },
 
@@ -27,7 +32,7 @@ return {
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
 
   -- { import = "astrocommunity.scrolling.mini-animate" },
-
+  
   -- { import = "astrocommunity.remote-development.distant-nvim" },
 
   { import = "astrocommunity.pack.typescript" },
