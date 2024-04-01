@@ -39,6 +39,7 @@ return {
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.java" },
+  { import = "astrocommunity.pack.svelte" },
 
   { import = "astrocommunity.project.nvim-spectre" },
 }
