@@ -7,20 +7,18 @@ return {
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 
-  { import = "astrocommunity.completion.codeium-vim" },
-  
   { import = "astrocommunity.colorscheme.catppuccin" },
-  -- { import = "astrocommunity.colorscheme.rose-pine" },
+  -- { import = "astrocommunity.colorscheme.dracula-nvim" },
   -- { import = "astrocommunity.colorscheme.github-nvim-theme" },
   -- { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
+  -- { import = "astrocommunity.colorscheme.rose-pine" },
   -- { import = "astrocommunity.colorscheme.vscode-nvim" },
-  -- { import = "astrocommunity.colorscheme.dracula-nvim" },
+  --
+  { import = "astrocommunity.completion.codeium-vim" },  
 
   { import = "astrocommunity.diagnostics.trouble-nvim" },
 
   -- { import = "astrocommunity.editing-support.auto-save-nvim" },
-  { import = "astrocommunity.editing-support.neogen" },
-  { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.editing-support.cutlass-nvim" },
   {
     "gbprod/cutlass.nvim",
@@ -28,18 +26,25 @@ return {
       cut_key = "x",
     }
   },
+  { import = "astrocommunity.editing-support.neogen" },
+  { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.editing-support.multicursors-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
 
-  -- { import = "astrocommunity.scrolling.mini-animate" },
+  { import = "astrocommunity.pack.java" },
+  { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.svelte" },
+  { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.tailwindcss" },
+
+  { import = "astrocommunity.project.nvim-spectre" },
+
+  -- { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
+  { import = "astrocommunity.recipes.heirline-vscode-winbar" },
+  -- { import = "astrocommunity.recipes.telescope-nvchad-theme" },
+  { import = "astrocommunity.recipes.vscode-icons" },
   
   -- { import = "astrocommunity.remote-development.distant-nvim" },
 
-  { import = "astrocommunity.pack.typescript" },
-  { import = "astrocommunity.pack.tailwindcss" },
-  { import = "astrocommunity.pack.markdown" },
-  { import = "astrocommunity.pack.java" },
-  { import = "astrocommunity.pack.svelte" },
-
-  { import = "astrocommunity.project.nvim-spectre" },
+  -- { import = "astrocommunity.scrolling.mini-animate" },
 }
