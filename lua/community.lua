@@ -31,6 +31,7 @@ return {
   { import = "astrocommunity.editing-support.multicursors-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
 
+  { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.svelte" },
