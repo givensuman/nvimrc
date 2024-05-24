@@ -1,5 +1,9 @@
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
+-- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
+--       as this provides autocomplete and documentation while editing
 
 ---@type LazySpec
 return {
@@ -28,6 +32,7 @@ return {
         spell = false, -- sets vim.opt.spell
         signcolumn = "auto", -- sets vim.opt.signcolumn to auto
         wrap = true, -- sets vim.opt.wrap
+        scrolloff = 10,
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
@@ -60,18 +65,6 @@ return {
         ["<Leader>b"] = { desc = "Buffers" },
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
-        ["<Leader>c"] = {
-        function()
-          local bufs = vim.fn.getbufinfo({ buflisted = true })
-          require("astrocore.buffer").close(0)
-          if
-            require("astrocore").is_available("alpha-nvim") and not bufs[2]
-          then
-            require("alpha").start(true)
-          end
-        end,
-        desc = "Close buffer",
-        },
       },
       t = {
         -- setting a mapping to false will disable it
