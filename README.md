@@ -21,4 +21,5 @@ git clone https://github.com/givensuman/neovim_config ~/.config/nvim
 nvim
 ```
 
-![Screenshot from 2024-02-23 18-18-48](https://github.com/givensuman/neovim_config/assets/16063606/6021a8ba-c8ae-4b35-8b31-681d2c4d79a9)
+![screenshot](https://github.com/givensuman/neovim_config/assets/16063606/7e90fde3-3883-4f69-8500-c1e92d6c1d6f)
+
