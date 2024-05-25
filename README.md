@@ -1,4 +1,4 @@
-My Neovim config files, built off of the AstroNvim framework.
+My Neovim configuration files, built off of the AstroNvim framework.
 
 #### Make a backup of your current nvim and shared folder
 
