@@ -21,7 +21,7 @@ git clone https://github.com/givensuman/neovim_config ~/.config/nvim
 nvim
 ```
 
-![nvim](https://github.com/givensuman/nvimrc/assets/16063606/c3e29846-e035-485a-aadd-b82793606e83)
+![Screenshot from 2024-06-01 12-01-33](https://github.com/givensuman/nvimrc/assets/16063606/3ab28911-af5c-4e6c-98ef-88776e769b1b)
 
 #### Dependencies
 
