@@ -1,5 +1,31 @@
 ---@type LazySpec
 return {
+  -- {
+  --   "folke/tokyonight.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {},
+  -- },
+  -- {
+  --   "AstroNvim/astroui",
+  --   ---@type AstroUIOpts
+  --   opts = {
+  --     colorscheme = "tokyonight-night",
+  --   },
+  -- },
+  {
+    "supermaven-inc/supermaven-nvim",
+    config = function()
+      require("supermaven-nvim").setup {
+        keymaps = {
+          accept_suggestion = "<C-g>",
+          clear_suggestion = "<C-f>",
+        },
+        disable_inline_completion = false,
+        disable_keymaps = false,
+      }
+    end,
+  },
   {
     "goolord/alpha-nvim",
     opts = function(_, opts)
