@@ -58,17 +58,4 @@ return {
   -- { import = "astrocommunity.remote-development.distant-nvim" },
 
   { import = "astrocommunity.scrolling.mini-animate" },
-
-  { import = "astrocommunity.utility.noice-nvim" },
-
-  { import = "astrocommunity.workflow.precognition-nvim" },
-  {
-    "tris203/precognition.nvim",
-    --event = "VeryLazy",
-    config = {
-      highlightColor = {
-        link = "pink",
-      },
-    },
-  },
 }

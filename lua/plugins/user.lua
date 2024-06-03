@@ -14,6 +14,19 @@ return {
   --   },
   -- },
   {
+    "tris203/precognition.nvim",
+    event = "VeryLazy",
+    opts = {},
+    config = function()
+      require("precognition").setup {
+        highlightColor = {
+          foreground = "#FF007C",
+          background = "#292E42",
+        },
+      }
+    end,
+  },
+  {
     "supermaven-inc/supermaven-nvim",
     config = function()
       require("supermaven-nvim").setup {
