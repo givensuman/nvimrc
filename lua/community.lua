@@ -49,6 +49,12 @@ return {
   { import = "astrocommunity.pack.zig" },
 
   { import = "astrocommunity.project.nvim-spectre" },
+  {
+    "nvim-pack/nvim-spectre",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+  },
 
   { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" },
   { import = "astrocommunity.recipes.heirline-mode-text-statusline" },

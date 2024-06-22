@@ -7,24 +7,60 @@ return {
   --   opts = {},
   -- },
   -- {
-  --   "AstroNvim/astroui",
-  --   ---@type AstroUIOpts
-  --   opts = {
-  --     colorscheme = "tokyonight-night",
-  --   },
+  --   "tris203/precognition.nvim",
+  --   event = "VeryLazy",
+  --   opts = {},
+  --   config = function()
+  --     require("precognition").setup {
+  --       highlightColor = {
+  --         foreground = "#FF007C",
+  --         background = "#292E42",
+  --       },
+  --     }
+  --   end,
+  -- },
+  -- {
+  --   "kosayoda/nvim-lightbulb",
+  --   event = "VeryLazy",
+  --   config = function()
+  --     require("nvim-lightbulb").setup {
+  --       autocmd = { enabled = true },
+  --     }
+  --   end,
+  -- },
+  -- {
+  --   "xiyaowong/transparent.nvim",
+  -- },
+  -- {
+  --   "nvim-neo-tree/neo-tree.nvim",
+  --   opts = function(_, opts)
+  --     require("transparent").clear_prefix "NeoTree"
+  --     require("astrocore").extend_tbl(opts, {})
+  --   end,
   -- },
   {
-    "tris203/precognition.nvim",
-    event = "VeryLazy",
-    opts = {},
+    "navarasu/onedark.nvim",
+    priority = 1000,
     config = function()
-      require("precognition").setup {
-        highlightColor = {
-          foreground = "#FF007C",
-          background = "#292E42",
+      require("onedark").setup {
+        style = "darker",
+        term_colors = true,
+        code_style = {
+          comments = "italic",
+        },
+        diagnostics = {
+          darker = true,
+          background = true,
         },
       }
     end,
+  },
+  {
+    "AstroNvim/astroui",
+    ---@type AstroUIOpts
+    opts = {
+      colorscheme = "onedark",
+    },
   },
   {
     "supermaven-inc/supermaven-nvim",
